@@ -1,37 +1,148 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/styles.min.css">
-    <title>CV</title>
-  </head>
-  <body>
-    <div class="container">
 
-      <div class="row">
-      <div class="col-3">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.min.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-4 menu">
         <div class="sidebar_headings">
           <img src="img/chairman.jpg" alt=""><br>
 
           <div class="side_nav">
-            <a href="#">ABOUT</a><br>
-            <a href="#">EDUCATION</a><br>
-            <a href="#">WORK</a><br>
-            <a href="#">SKILLS</a><br>
+            <a href="#">ABOUT ME</a><br>
+            <a href="#education">EDUCATION</a><br>
+            <a href="#work">WORK</a><br>
+            <a href="#hobbies">HOBBIES AND INTERESTS</a><br>
             <a href="#">CONTACT</a>
 
           </div>
         </div>
       </div>
 
-      <div class="col-9">
-          <h1 id="f_name">SIPHO</h1>
-          <h1 id="l_name">GCELU</h1><br><br><br><br>
-          <h3 id="sentence">A Junior Web developer</h3>
+      <div class="col-8">
+        <div class="about">
+          <div class="head_name">
+            <h1><span id="fname_letter">S</span>IPHO <span id="l_name"><span id="lname_letter">G</span>CELU</span></h1>
+          </div>
+          <h2 id="title_text">Junior <span id="web">Web</span> developer</h2>
+          <p>I am a hardworking, dedicated and energetic young man that is motivated by the desire to solve problems. I am always up for a challenge and love to learn new things that will increase the knowledge I have. I have love and passion for developing
+            websites and, on my spare time, I compose songs. I communicate well, self-motivated, time manager, decision maker and I’m able to work under pressure.</p>
+        </div>
+
+        <hr>
+
+        <div id="education" class="education">
+          <h2>EDUCATION</h2>
+
+          <div class="edu_course">
+            <h3>COURSE</h3>
+            <h4>CodeSpace Academy</h4>
+            <p>Front End Web development</p>
+            <p>2017</p>
+            <p><b>Subject: </b>Programming, professional development, design thinking</p>
+            <p><b>Programming Languages: </b></p>
+            <ul>
+              <li>HTML and Bootstrap Framework</li>
+              <li>CSS (SASS and SCSS)</li>
+              <li>Javascript (Node.js, Express.js, Mongoose, jQuery, React.js)</li>
+              <li>Mongodb, MySQL</li>
+            </ul>
+          </div>
+
+          <div class="edu_highschool">
+            <h3>HIGH SCHOOL</h3>
+            <h4>Centre of Science and Technology</h4>
+            <p>Grade 12 (Bachelors)</p>
+            <p>2012 - 2016</p>
+
+            <p><b>Subjects:</b></p>
+            <ul>
+              <li>Mathematics, Physical Sciences, Life Sciences</li>
+              <li>Information Technology, IsiXhosa HL, English FAL</li>
+              <li>Life Orientation</li>
+            </ul>
+
+            <p><b>Leadership position:</b></p>
+            <ul>
+              <li>Member of the Representative Council of Learners(2012)</li>
+              <li>Head boy(2016)</li>
+            </ul>
+
+            <p><b>Sport: </b> 1st Team and Ilitha Park stars club</p>
+
+            <p><b>Achievements: </b></p>
+            <ul>
+              <li>Top student in 2012</li>
+              <li>Finalist of Innovate the Cape (2015) - developed an education application for students to receive assistance from teachers and parents at home.</li>
+              <li>Western Cape FIRST Lego League Tournament Finalists (2015)</li>
+            </ul>
+
+          </div>
+        </div>
+
+        <hr>
+
+        <div id="work" class="work">
+          <h2>WORK</h2>
+
+          <div class="work_contain">
+
+            <p><b>Name of Company         : </b>Ikusasa Lethu</p>
+            <p><b>Position                : </b>Tutor</p>
+            <p><b>Duration of service     : </b>2017-2018</p>
+            <p><b>Duties/Responsibilities : </b></p>
+            <ul>
+              <li>Assisting with homework and </li>
+              <li>preparation for tests in Physics and Life Sciences</li>
+            </ul>
+
+            <br>
+            <br>
+
+            <p><b>Name of Company         : </b>SHAWCO</p>
+            <p><b>Position                : </b>Volunteer</p>
+            <p><b>Duration of service     : </b>2015</p>
+            <p><b>Duties/Responsibilities : </b></p>
+            <ul>
+              <li>Assisting an old age home with </li>
+              <li>gardening, cleaning and cooking</li>
+            </ul>
+          </div>
+        </div>
+
+        <hr>
+
+        <div id="hobbies" class="hobbies">
+          <h2>HOBBIES AND INTERESTS</h2>
+
+          <ul>
+            <li>Volunteering (tutoring or charity work)</li>
+            <li>Playing piano or drums</li>
+            <li>Gaming</li>
+          </ul>
+
+        </div>
+
+        <hr>
+
+        <div class="contact">
+          <h2>CONTACT</h2>
+        </div>
       </div>
 
     </div>
-    </div>
-  </body>
+
+  </div>
+
+</body>
+
 </html>

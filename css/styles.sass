@@ -1,66 +1,180 @@
-.container
-  width: 100%
+/* For mobile phones: */
+[class*="col-"]
+    width: 100%
 
+@media only screen and (min-width: 768px)
+    /* For desktop: */
+    .col-1
+      width: 8.33%
+    .col-2
+      width: 16.66%
+    .col-3
+      width: 25%
+    .col-4
+      width: 33.33%
+    .col-5
+      width: 41.66%
+    .col-6
+      width: 50%
+    .col-7
+      width: 58.33%
+    .col-8
+      width: 66.66%
+    .col-9
+      width: 75%
+    .col-10
+      width: 83.33%
+    .col-11
+      width: 91.66%
+    .col-12
+      width: 100%
 
-.col-3
-  float: left
-  width: 30%
+*
+  box-sizing: border-box
+
+.row::after
+    content: ""
+    clear: both
+    display: table
+
+.col-4
   height: 100%
-  background-color: #8b4716
-  z-index: 1
-  top: 0
-  left: 0
+  background-color: #370303
   position: fixed
-  overflow-x: hidden
 
-.col-9
-  float: left
-  width: 100%
-  padding: 0px 10px
-
-
-.col-3 img
+.col-4 img
   width: 50%
-  height: auto
   border-radius: 50%
   margin-top: 15%
+  height: auto
 
 .sidebar_headings
   text-align: center
 
-.icon-bar
-    width: 90px
-    background-color: #555
+.side_nav
+  margin-top: 10%
 
 .side_nav a
-    display: block
-    text-align: center
-    padding: 1%
-    transition: all 0.3s ease
-    color: white
-    font-size: 20px
-    text-decoration: none
-
+  display: block
+  text-align: center
+  padding: 2%
+  transition: all 0.5s ease
+  color: white
+  font-size: 20px
+  text-decoration: none
 
 .side_nav a:hover
-    background-color: #000
+  background-color: #563d3d
 
-.main_page
+[class*="col-"]
+    float: left
+    padding: 15px
+
+html
+    font-family: "Lucida Sans", sans-serif
+
+.col-8
+  margin-left: 33.33%
+
+.head_name
+  display: inline-block
   width: 100%
 
-#f_name
-  float: left
-  margin-left: 30%
-  padding-left: 2%
+.head_name h1
   font-size: 50px
+  padding-right: 2%
+
+#title_text
+  font-size: 30px
+  padding-bottom: 5%
 
 #l_name
-  float: left
-  padding-left: 2%
   font-size: 50px
-  color: #8b4716
+  color: #370303
 
-#sentence
-  float: left
-// #web
-//   color: #8b4716
+#fname_letter
+  font-size: 75px
+
+#lname_letter
+  font-size: 75px
+
+.about
+  margin-left: 5%
+
+.about p
+  width: 90%
+  font-size: 25px
+  font-family: "Comic Sans MS", cursive, sans-serif
+  padding-bottom: 8%
+
+#web
+  color: #370303
+
+hr
+  margin-bottom: 7%
+
+.education
+  width: 100%
+  background-color: lightgrey
+  margin-bottom: 8%
+
+.education h2
+  font-size: 35px
+  text-align: center
+
+.edu_course
+  width: 70%
+  margin-left: 5%
+  margin-bottom: 10%
+
+.edu_highschool
+  width: 70%
+  margin-left: 5%
+
+.edu_course h3
+  font-size: 27px
+
+.edu_course h4
+  font-size: 20px
+
+.edu_course p
+  font-size: 18px
+
+.edu_highschool h3
+  font-size: 27px
+
+.edu_highschool h4
+  font-size: 20px
+
+.edu_highschool p
+  font-size: 18px
+
+ul
+  list-style: none
+  font-size: 18px
+.work
+  margin-bottom: 8%
+
+.work h2
+  font-size: 35px
+  text-align: center
+
+.work_contain
+  width: 70%
+  margin-left: 5%
+
+.hobbies h2
+  font-size: 35px
+  text-align: center
+
+.hobbies
+  width: 100%
+  background-color: lightgrey
+  margin-bottom: 8%
+
+.hobbies ul
+  text-align: center
+
+.contact h2
+  font-size: 35px
+  text-align: center
