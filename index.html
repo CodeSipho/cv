@@ -1,148 +1,177 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/styles.min.css">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/check.min.css">
 </head>
-
 <body>
 
-  <div class="container">
+<ul id="sidenav" class="sidenav">
+  <img src="img/chairman.jpg" alt="">
+  <li><a href="#about">ABOUT ME</a></li>
+  <li><a href="#education">EDUCATION</a></li>
+  <li><a href="#work">WORK</a></li>
+  <li><a href="#hobbies">HOBBIES AND INTERESTS</a></li>
+  <li><a href="#contact">CONTACT</a></li>
+</ul>
 
-    <div class="row">
+<div class="content">
+  <div id="about" >
+    <div class="head_name">
+      <h1><span id="fname_letter">S</span>IPHO <span id="l_name"><span id="lname_letter">G</span>CELU</span></h1>
+    </div>
+    <h2 id="title_text">Junior <span id="web">Web</span> developer</h2>
+    <p>I am a hardworking, dedicated and energetic young man that is motivated by the desire to solve problems. I am always up for a challenge and love to learn new things that will increase the knowledge I have. I have love and passion for developing
+      websites and, on my spare time, I compose songs. I communicate well, self-motivated, time manager, decision maker and I’m able to work under pressure.</p>
+    </div>
 
-      <div class="col-4 menu">
-        <div class="sidebar_headings">
-          <img src="img/chairman.jpg" alt=""><br>
+  <hr>
 
-          <div class="side_nav">
-            <a href="#">ABOUT ME</a><br>
-            <a href="#education">EDUCATION</a><br>
-            <a href="#work">WORK</a><br>
-            <a href="#hobbies">HOBBIES AND INTERESTS</a><br>
-            <a href="#">CONTACT</a>
+  <div id="education" class="education grey_box">
+    <h2>EDUCATION</h2>
 
-          </div>
-        </div>
-      </div>
+    <div class="edu_course">
+      <h3>COURSE</h3>
+      <h4>CodeSpace Academy</h4>
+      <p>Front End Web development</p>
+      <p>2017</p>
+      <p><b>Subject: </b>Programming, professional development, design thinking</p>
+      <p><b>Programming Languages: </b></p>
+      <ul>
+        <li>HTML and Bootstrap Framework</li>
+        <li>CSS (SASS)</li>
+        <li>Javascript (Node.js, Express.js, Mongoose, jQuery)</li>
+        <li>Mongodb, MySQL</li>
+      </ul>
+    </div>
 
-      <div class="col-8">
-        <div class="about">
-          <div class="head_name">
-            <h1><span id="fname_letter">S</span>IPHO <span id="l_name"><span id="lname_letter">G</span>CELU</span></h1>
-          </div>
-          <h2 id="title_text">Junior <span id="web">Web</span> developer</h2>
-          <p>I am a hardworking, dedicated and energetic young man that is motivated by the desire to solve problems. I am always up for a challenge and love to learn new things that will increase the knowledge I have. I have love and passion for developing
-            websites and, on my spare time, I compose songs. I communicate well, self-motivated, time manager, decision maker and I’m able to work under pressure.</p>
-        </div>
+    <div class="edu_highschool">
+      <h3>HIGH SCHOOL</h3>
+      <h4>Centre of Science and Technology</h4>
+      <p>Grade 12 (Bachelors)</p>
+      <p>2012 - 2016</p>
 
-        <hr>
+      <p><b>Subjects:</b></p>
+      <ul>
+        <li>Mathematics, Physical Sciences, Life Sciences</li>
+        <li>Information Technology, IsiXhosa HL, English FAL</li>
+        <li>Life Orientation</li>
+      </ul>
 
-        <div id="education" class="education">
-          <h2>EDUCATION</h2>
+      <p><b>Leadership position:</b></p>
+      <ul>
+        <li>Member of the Representative Council of Learners(2012)</li>
+        <li>Head boy(2016)</li>
+      </ul>
 
-          <div class="edu_course">
-            <h3>COURSE</h3>
-            <h4>CodeSpace Academy</h4>
-            <p>Front End Web development</p>
-            <p>2017</p>
-            <p><b>Subject: </b>Programming, professional development, design thinking</p>
-            <p><b>Programming Languages: </b></p>
-            <ul>
-              <li>HTML and Bootstrap Framework</li>
-              <li>CSS (SASS and SCSS)</li>
-              <li>Javascript (Node.js, Express.js, Mongoose, jQuery, React.js)</li>
-              <li>Mongodb, MySQL</li>
-            </ul>
-          </div>
+      <p><b>Sport: </b> 1st Team and Ilitha Park stars club</p>
 
-          <div class="edu_highschool">
-            <h3>HIGH SCHOOL</h3>
-            <h4>Centre of Science and Technology</h4>
-            <p>Grade 12 (Bachelors)</p>
-            <p>2012 - 2016</p>
-
-            <p><b>Subjects:</b></p>
-            <ul>
-              <li>Mathematics, Physical Sciences, Life Sciences</li>
-              <li>Information Technology, IsiXhosa HL, English FAL</li>
-              <li>Life Orientation</li>
-            </ul>
-
-            <p><b>Leadership position:</b></p>
-            <ul>
-              <li>Member of the Representative Council of Learners(2012)</li>
-              <li>Head boy(2016)</li>
-            </ul>
-
-            <p><b>Sport: </b> 1st Team and Ilitha Park stars club</p>
-
-            <p><b>Achievements: </b></p>
-            <ul>
-              <li>Top student in 2012</li>
-              <li>Finalist of Innovate the Cape (2015) - developed an education application for students to receive assistance from teachers and parents at home.</li>
-              <li>Western Cape FIRST Lego League Tournament Finalists (2015)</li>
-            </ul>
-
-          </div>
-        </div>
-
-        <hr>
-
-        <div id="work" class="work">
-          <h2>WORK</h2>
-
-          <div class="work_contain">
-
-            <p><b>Name of Company         : </b>Ikusasa Lethu</p>
-            <p><b>Position                : </b>Tutor</p>
-            <p><b>Duration of service     : </b>2017-2018</p>
-            <p><b>Duties/Responsibilities : </b></p>
-            <ul>
-              <li>Assisting with homework and </li>
-              <li>preparation for tests in Physics and Life Sciences</li>
-            </ul>
-
-            <br>
-            <br>
-
-            <p><b>Name of Company         : </b>SHAWCO</p>
-            <p><b>Position                : </b>Volunteer</p>
-            <p><b>Duration of service     : </b>2015</p>
-            <p><b>Duties/Responsibilities : </b></p>
-            <ul>
-              <li>Assisting an old age home with </li>
-              <li>gardening, cleaning and cooking</li>
-            </ul>
-          </div>
-        </div>
-
-        <hr>
-
-        <div id="hobbies" class="hobbies">
-          <h2>HOBBIES AND INTERESTS</h2>
-
-          <ul>
-            <li>Volunteering (tutoring or charity work)</li>
-            <li>Playing piano or drums</li>
-            <li>Gaming</li>
-          </ul>
-
-        </div>
-
-        <hr>
-
-        <div class="contact">
-          <h2>CONTACT</h2>
-        </div>
-      </div>
+      <p><b>Achievements: </b></p>
+      <ul>
+        <li>Top student in 2012</li>
+        <li>Finalist of Innovate the Cape (2015) - developed an education application for students to receive assistance from teachers and parents at home.</li>
+        <li>Western Cape FIRST Lego League Tournament Finalists (2015)</li>
+      </ul>
 
     </div>
+  </div>
+
+  <hr>
+
+  <div id="work" class="work">
+    <h2>WORK</h2>
+
+    <div class="work_contain">
+
+      <p><b>Name of Company         : </b>Ikusasa Lethu</p>
+      <p><b>Position                : </b>Tutor</p>
+      <p><b>Duration of service     : </b>2017-2018</p>
+      <p><b>Duties/Responsibilities : </b></p>
+      <ul>
+        <li>Assisting with homework and </li>
+        <li>preparation for tests in Physics and Life Sciences</li>
+      </ul>
+
+      <br>
+      <br>
+
+      <p><b>Name of Company         : </b>SHAWCO</p>
+      <p><b>Position                : </b>Volunteer</p>
+      <p><b>Duration of service     : </b>2015</p>
+      <p><b>Duties/Responsibilities : </b></p>
+      <ul>
+        <li>Assisting an old age home with </li>
+        <li>gardening, cleaning and cooking</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr>
+
+  <div id="hobbies" class="hobbies grey_box">
+    <h2>HOBBIES AND INTERESTS</h2>
+
+    <ul>
+      <li>Volunteering (tutoring or charity work)</li>
+      <li>Playing piano or drums</li>
+      <li>Gaming</li>
+    </ul>
 
   </div>
 
-</body>
+  <hr>
 
+  <div class="contact">
+    <h2>CONTACT</h2>
+    <img src="img/wall-175686_960_720.jpg" alt="">
+    <h4>Find me on the above social media platforms</h4>
+    <div class="contact_content">
+    <a href="https://www.facebook.com/profile.php?id=100006674719337" class="fa fa-facebook"></a>
+    <a href="https://www.linkedin.com/in/sipho-gcelu-68966a157/" class="fa fa-linkedin"></a>
+    <!-- <a href="#email" class="fa fa-google"></a> -->
+
+    <div id="email" class="fa fa-google popup" onclick="myFunction()">
+      <span class="popuptext" id="myPopup">This is my email address: gcelusipho@gmail.com</span>
+    </div>
+
+  </div>
+</div>
+</div>
+
+</body>
 </html>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+$("a").on('click', function(event) {
+ if (this.hash !== "") {
+   event.preventDefault();
+   var hash = this.hash;
+   $('html, body').animate({
+     scrollTop: $(hash).offset().top
+   }, 1000, function(){
+     window.location.hash = hash;
+   });
+ }
+});
+
+var navbar = document.getElementById("sidenav");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+$("#email").on('click', function(event) {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+});
+
+</script>

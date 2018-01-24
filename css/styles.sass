@@ -1,80 +1,49 @@
-/* For mobile phones: */
-[class*="col-"]
-    width: 100%
+body
+  margin: 0
 
-@media only screen and (min-width: 768px)
-    /* For desktop: */
-    .col-1
-      width: 8.33%
-    .col-2
-      width: 16.66%
-    .col-3
-      width: 25%
-    .col-4
-      width: 33.33%
-    .col-5
-      width: 41.66%
-    .col-6
-      width: 50%
-    .col-7
-      width: 58.33%
-    .col-8
-      width: 66.66%
-    .col-9
-      width: 75%
-    .col-10
-      width: 83.33%
-    .col-11
-      width: 91.66%
-    .col-12
-      width: 100%
-
-*
-  box-sizing: border-box
-
-.row::after
-    content: ""
-    clear: both
-    display: table
-
-.col-4
-  height: 100%
+ul.sidenav
+  list-style-type: none
+  margin: 0
+  padding: 0
+  width: 30%
   background-color: #370303
   position: fixed
+  height: 100%
+  overflow: auto
+  text-align: center
 
-.col-4 img
+ul.sidenav img
   width: 50%
   border-radius: 50%
   margin-top: 15%
   height: auto
 
-.sidebar_headings
-  text-align: center
+ul.sidenav li a
+    text-decoration: none
+    display: block
+    padding: 5%
+    transition: all 0.5s ease
+    color: white
+    font-size: 20px
 
-.side_nav
-  margin-top: 10%
 
-.side_nav a
-  display: block
-  text-align: center
-  padding: 2%
-  transition: all 0.5s ease
-  color: white
-  font-size: 20px
-  text-decoration: none
+ul.sidenav li a.active
+    background-color: #4CAF50
+    color: white
 
-.side_nav a:hover
-  background-color: #563d3d
 
-[class*="col-"]
-    float: left
-    padding: 15px
+ul.sidenav li a:hover:not(.active)
+    background-color: #555
+    color: white
+
+
+div.content
+    margin-left: 30%
+    padding: 1px 16px
+    height: 1000px
 
 html
     font-family: "Lucida Sans", sans-serif
-
-.col-8
-  margin-left: 33.33%
 
 .head_name
   display: inline-block
@@ -98,10 +67,17 @@ html
 #lname_letter
   font-size: 75px
 
-.about
+// .container {
+//     position: relative;
+//     max-width: 800px;
+//     margin: 0 auto;
+// }
+
+
+#about
   margin-left: 5%
 
-.about p
+#about p
   width: 90%
   font-size: 25px
   font-family: "Comic Sans MS", cursive, sans-serif
@@ -111,16 +87,7 @@ html
   color: #370303
 
 hr
-  margin-bottom: 7%
-
-.education
-  width: 100%
-  background-color: lightgrey
-  margin-bottom: 8%
-
-.education h2
-  font-size: 35px
-  text-align: center
+  margin-bottom: 10%
 
 .edu_course
   width: 70%
@@ -130,51 +97,162 @@ hr
 .edu_highschool
   width: 70%
   margin-left: 5%
+  padding-bottom: 3%
 
-.edu_course h3
+.grey_box h2
+  padding-top: 3%
+  font-size: 35px
+  text-align: center
+
+.grey_box h3
   font-size: 27px
 
-.edu_course h4
+.grey_box h4
   font-size: 20px
 
-.edu_course p
-  font-size: 18px
-
-.edu_highschool h3
-  font-size: 27px
-
-.edu_highschool h4
-  font-size: 20px
-
-.edu_highschool p
+.grey_box p
   font-size: 18px
 
 ul
   list-style: none
   font-size: 18px
+
 .work
-  margin-bottom: 8%
+  margin-bottom: 10%
 
 .work h2
   font-size: 35px
   text-align: center
 
+.work p
+  font-size: 18px
+
 .work_contain
   width: 70%
   margin-left: 5%
 
-.hobbies h2
-  font-size: 35px
-  text-align: center
-
-.hobbies
+.grey_box
   width: 100%
   background-color: lightgrey
-  margin-bottom: 8%
-
-.hobbies ul
-  text-align: center
+  margin-bottom: 10%
 
 .contact h2
   font-size: 35px
   text-align: center
+
+.contact
+  position: relative
+  margin: 0 auto
+
+.contact img
+  vertical-align: middle
+  width: 100%
+  height: 250px
+  opacity: 0.5
+
+.contact .contact_content
+  position: absolute
+  bottom: 0
+  background: rgba(0, 0, 0, 0.5)
+  color: #f1f1f1
+  width: 95%
+  padding: 20px
+
+.fa
+  padding: 30px
+  font-size: 30px
+  width: 50px
+  text-align: center
+  text-decoration: none
+  margin: 5px 2px
+  margin-left: 13%
+
+.fa:hover
+    opacity: 0.7
+
+.fa-facebook
+  background: #3B5998
+  color: white
+
+.fa-linkedin
+  background: #007bb5
+  color: white
+
+.fa-google
+  background: #dd4b39
+  color: white
+
+.popup
+  position: relative
+  display: inline-block
+  cursor: pointer
+
+.popup .popuptext
+    visibility: hidden
+    width: 160px
+    background-color: #555
+    color: #fff
+    text-align: center
+    border-radius: 6px
+    padding: 8px 0
+    position: absolute
+    z-index: 1
+    bottom: 125%
+    left: 50%
+    margin-left: -80px
+
+
+/* Popup arrow */
+.popup .popuptext::after
+    content: ""
+    position: absolute
+    top: 100%
+    left: 50%
+    margin-left: -5px
+    border-width: 5px
+    border-style: solid
+    border-color: #555 transparent transparent transparent
+
+
+.popup .show
+    visibility: visible
+    -webkit-animation: fadeIn 1s
+    animation: fadeIn 1s
+
+@-webkit-keyframes fadeIn
+    from
+      opacity: 0
+    to
+      opacity: 1
+
+@keyframes fadeIn
+    from
+      opacity: 0
+    to
+      opacity: 1
+
+@media screen and (max-width: 900px)
+    ul.sidenav img
+      display: none
+
+    ul.sidenav
+        width: 100%
+        height: auto
+        position: fixed
+
+    ul.sidenav li a
+        float: left
+        padding: 15px
+
+    div.content
+      margin-left: 0
+      padding-top: 13%
+
+@media screen and (max-width: 400px)
+    ul.sidenav li a
+        text-align: center
+        float: none
+
+    div.content
+      margin-left: 0
+      padding-top: 55%
